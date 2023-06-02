@@ -1,0 +1,651 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*************************** VARIABLES ********************************/
+:root{
+    --body-background-color:#403066;
+    --bg-component-color:#0a3477;
+    --font-for-all:'Ubuntu', sans-serif;
+    --general-font-color:white;
+    --box-shadow-color:red;
+}  
+
+/********************** GENERAL CLASSES ***************************/  
+.flexible{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section-heading{
+    color: var(--general-font-color);
+    font-family: var(--font-for-all);
+    font-size: 1rem;
+    margin: 1% 2.5%; 
+    font-weight: bold; 
+}
+.pointer{
+    cursor: pointer;
+}
+.pointer:hover{
+    opacity: 0.7;
+}
+/******************** BODY *************************/
+body{
+   background-color: var(--body-background-color);
+   scroll-behavior: smooth;
+   height: 100vh;
+   transition: all 1s ease-in-out;
+   scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+/**************** ******* HEADER ******** ****************/
+header{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1% 3%;
+}
+/****************** HEADER LEFT ***************/
+.header-left{  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/************* DESIGN ICON *****************/
+
+#icon{       
+    height: 60px;
+    width: 60px;
+    border-radius:20% 0px 20% 0px;
+    background-image: url(./assets/headphone.png);
+    background-color: var(--bg-component-color);  
+    display: inline-block;
+    background-repeat:no-repeat;
+    background-size: contain;
+    transition: all 2s ease-in-out;
+}
+
+#icon:hover{
+    transform: rotateY(360deg);
+}
+
+#app-name{
+    color: var(--general-font-color);
+    font-weight: bold;
+    font-family: var(--font-for-all);
+    display: inline-block;
+}
+
+/************************ HEADER RIGHT **************************/
+.header-right{
+    display: flex;
+    align-items: center;
+}
+/******************************** SEARCH *******************************/
+#search{
+    background-color: var(--bg-component-color);
+    display: inline-block;
+    color:var(--general-font-color);
+    padding: 3px;
+    width: 281px;
+    margin: 10px;
+}
+   
+#search form input{
+    background: transparent;
+    color: var(--general-font-color);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 6px;
+}
+
+/************************** BELL ICON *****************/
+#notification{
+    color: var(--general-font-color);
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+/*****************************  PROFILE ***************************/
+
+#profile{
+    height:50px;
+    width: 50px;
+    background-image: url(./assets/profie.png);
+    background-color: var(--bg-component-color);  
+    background-size: contain;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5%;    
+}  
+/******************** WHOLE STRUCTURE *******************/
+#whole-structure{
+    display: flex;
+    flex-wrap: wrap;
+}   
+/************************** MAIN SECTION **************************/
+main::-webkit-scrollbar {
+    display: none;
+  }
+main{
+    flex-grow: 3;
+    margin-left: 2%;
+    height: 90vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+/*************** TOP *******************/
+#top-card{
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    justify-content: space-around;
+}
+.top{
+    margin: 1%;
+    transition: all 0.2s ease-in-out;     
+    cursor: pointer;
+}
+.top:hover{
+    transform: scale(1.1);
+}
+.top img{
+    height:200px;
+    width: 300px;
+    opacity: 0.7;
+}
+/************************** LATEST RELEASE ***********************/
+.latest-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.latest-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1%;
+    min-width: 34%;
+}
+  /********* Play And Pause ******************/
+  .play-pause{
+    /* color: #0000008e; */
+    color: rgba(255, 255, 255, 0.784);
+    position: absolute;
+    right: 46px;
+    top: 11%;
+    width: 15%;
+  }
+  input[type="checkbox"]{
+    cursor: pointer;
+    opacity: 0;
+  }
+  .play-icon{
+    display: inline-block;
+  }
+  .pause-icon{
+    display: none;
+  }
+  .check:checked~.play-icon{
+    display: none;
+  }
+  .check:checked~.pause-icon{
+    display: block;     
+  }
+  /******************** Play Bar **********************/
+  #bottom-play-bar:target{
+    opacity: 1;
+  }
+  .play-bar{
+    width: 100%;
+    color: var(--general-font-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-component-color);
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    margin-left: -2%;
+  } 
+  .music-info{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+  }
+  .music-img{
+    height: 60px;
+    width: 70px;
+    background-image: url(assets/latest-img/latest-img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 2%;
+  }
+  /******** MUSIC CONTROLS USING ICONS ********/
+  .music-controls{
+    display: flex;
+    align-items: center;
+  }
+  .music-controls i{
+    font-size: 1.3rem;
+    margin: 5px;
+  }
+  input[type="range"]{
+    height:4px;
+  }    
+  .music-controls input[type="range"]{
+    width: 300px;
+  }          
+  .music-controls span{
+    margin: 4px;
+  }
+  .another-controls{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3%;
+  }
+  input[type="rang"]{
+    color: var(--general-font-color);
+  }
+
+  /*************** MUSIC CONTROLS USING AUDIO TAG ************/
+  #music-tag{
+    height: 35px;
+    width: 400px;
+    margin: 7px;
+  }
+  #music-tag::-webkit-media-controls-panel{
+    background-color: rgba(142, 92, 218, 0.6);
+  }
+#music-tag::-webkit-media-controls-mute-button:hover{
+    background-color: rgba(142, 92, 218, 0.6);
+    border-radius: 50%;
+}
+#music-tag::-webkit-media-controls-play-button:hover{
+    background-color: rgba(142, 92, 218, 0.6);
+    border-radius: 50%;
+}
+#music-tag::-webkit-media-controls-volume-slider-container:hover{
+    background-color: rgba(142, 92, 218, 0.6);
+    border-radius: 50%;
+}
+#music-tag::-webkit-media-controls-volume-slider:hover{
+    background-color: rgba(142, 92, 218, 0.6);
+    border-radius: 50%;
+}
+#music-tag::-webkit-media-controls-seek-back-button:hover{
+    background-color: rgba(142, 92, 218, 0.6);
+    border-radius: 50%;
+}
+#music-tag::-webkit-media-controls-seek-forward-button:hover{
+    background-color: rgba(142, 92, 218, 0.6);
+    border-radius: 50%;
+}
+ /***********************************************/
+.btn{
+    font-size: 2rem;
+}
+.btn a{
+    text-decoration: none;
+    color: var(--general-font-color);
+}
+.card-right{
+    display: flex;
+    flex-wrap: wrap;
+}
+.latest-imgs{
+    max-width: 100px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.latest-imgs img{
+    height: 100% ;
+    width: 100%;
+}
+.play-btn{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+.play-btn i{
+    color: #090909c4;
+    font-size: 1.2rem;
+}
+
+/*************** POP UP CARD ********************/
+#pop-up{
+    height:0px;
+    width:0px;
+    position: relative;
+    top:10%;
+    left:10%;
+    overflow:hidden;
+}
+#pop-up:target{
+    min-height: 150px;
+    width: 20%;
+    background-color: #0a3477;
+    color: var(--general-font-color);
+    display: inline-block;
+    border-radius: 10%;
+    border:2px solid #483969;
+    top:30%;
+    left:30%;
+    position: fixed;
+    z-index: 1;
+}
+.popup-card span{
+    margin-right: 5%;
+}
+.popup-card p{
+    margin: 5%;
+    cursor: pointer;
+}
+.popup-card a{
+    color: var(--general-font-color);
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    cursor: pointer;
+}
+/******************* POPULAR ARTIST ***************/
+#artist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2%;
+}
+.artist-containar{
+    position: relative;
+}
+.artist-profile{
+    height: 80px;
+    width: 80px;
+    border: 2px solid red;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#artist1{
+    background-image: url(assets/artist-img/artist1.jpg);
+}
+#artist2{
+    background-image: url(assets/artist-img/artist2.jpg);
+}
+#artist3{
+    background-image: url(assets/artist-img/artist3.jpg);
+}
+#artist4{
+    background-image: url(assets/artist-img/artist4.jpg);
+}
+#artist5{
+    background-image: url(assets/artist-img/artist5.jpg);
+}
+#artist6{
+    background-image: url(assets/artist-img/artist6.jpg);
+}
+.play-new-screen{
+    display: inline;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+}
+.play-new-screen a{
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.593);
+}
+.play-new-screen:hover{
+    display: block;
+}
+.play-new-screen {
+    display: none;
+}
+.artist-profile:hover~.play-new-screen {
+    display: inline-block;
+}
+.caption{
+    color: var(--general-font-color);
+    margin: 5% 0.5%;
+    font-family: var(--font-for-all);
+    font-size: 1rem;
+}
+/****************** CATEGORY1 ********************/
+.category1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.catg-round{
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin: 2%;
+}
+.catg-round-name{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #80808078;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.catg-round-name p{
+    color: var(--general-font-color);
+    font-family: var(--font-for-all);
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 5.5;
+}
+#catg1{
+    background-image: url(assets/category1/electronic.jpg);
+}
+#catg2{
+    background-image: url(assets/category1/party.jpg);
+}
+#catg3{
+    background-image: url(assets/category1/radio.png);
+}
+#catg4{
+    background-image: url(assets/category1/roadTrip.jpg);
+}
+#catg5{
+    background-image: url(assets/category1/rock.jpg);
+}
+#catg6{
+    background-image: url(assets/category1/workout.jpg);
+}
+/****************** CATEGORY2 ********************/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    height: 150px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 2%;
+}
+.card-content{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    transition: all 1s ease-in-out;
+}
+.card-content:hover{
+    transform: scale(1.3);
+    overflow: hidden;
+}
+.card-name{
+    position:absolute;
+    left: 40%;
+    top: 40%;
+    color: var(--general-font-color);
+    font-size: 1.2rem;
+    font-family: var(--font-for-all);
+    cursor: pointer;
+}
+
+#card1{
+    background-image: url(assets/category2/chill.jpg);
+}
+#card2{
+    background-image: url(assets/category2/love.jpg);
+}
+#card3{
+    background-image: url(assets/category2/pop.jpg);
+}
+/****************** CATEGORY3 ********************/
+.flip:hover{
+    transform: rotateY(360deg);
+    overflow: hidden;
+}
+#card4{
+    background-image: url(assets/category3/band.jpg);
+}
+#card5{
+    background-image: url(assets/category3/singers.jpg);
+}
+#card6{
+    background-image: url(assets/category3/song.jpg);
+}
+/********************* Latest Hindi ********************/
+.hindi-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.hindi-card{
+    margin: 2%;
+    background-color: var(--bg-component-color);
+    padding: 1%;
+    border-radius: 10% 0 10% 0;
+}
+.hindi-card-img{
+    height: 120px;
+    width: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10% 0 10% 0;
+}
+#hindi-card-img1{     
+    background-image: url(assets/latestHindi/ind1.jpg);
+}
+#hindi-card-img2{
+    background-image: url(assets/latestHindi/ind2.jpg);
+}
+#hindi-card-img3{
+    background-image: url(assets/latestHindi/ind3.jpg);
+}
+#hindi-card-img4{
+    background-image: url(assets/latestHindi/ind4.jpg);
+}
+#hindi-card-img5{
+    background-image: url(assets/latestHindi/ind5.jpg);
+}
+
+.hindi-card-info{
+    color: var(--general-font-color);
+    font-family: var(--font-for-all);
+}
+
+/********************** LATEST ENGLISH *******************/
+
+#english-card-img1{
+    background-image: url(assets/latestEnglish/eng1.jpg);
+}
+#english-card-img2{
+    background-image: url(assets/latestEnglish/eng2.jpg);
+}
+#english-card-img3{
+    background-image: url(assets/latestEnglish/eng3.jpg);
+}
+#english-card-img4{
+    background-image: url(assets/latestEnglish/eng4.jpg);
+}
+#english-card-img5{
+    background-image: url(assets/latestEnglish/eng5.jpg);
+}
+/******************* ASIDE SECTION ******************/
+aside{ 
+    flex-grow: 3;
+    height: 90vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+aside::-webkit-scrollbar {    
+    display: none;
+}
+
+#queue{
+    margin:3%;
+} 
+
+.queue-template{
+    color: var(--general-font-color);
+    font-family: var(--font-for-all);
+    margin: 8px;
+    font-size: 1rem;
+    justify-content: space-between !important;
+}  
+.que-img{
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+}
+#que-img1{
+    background-image: url(assets/queImage/queImg1.jpg);
+}
+#que-img2{
+    background-image: url(assets/queImage/queImg2.jpg);
+}
+#que-img3{
+    background-image: url(assets/queImage/queImg3.jpg);
+}
+#que-img4{
+    background-image: url(assets/queImage/queImg4.jpg);
+}
+#que-img5{
+    background-image: url(assets/queImage/queImg5.jpg);
+}
+  
+.queue-temp-left{
+    display: flex;
+    align-items:center;
+}
+
+.queue-temp-left div{
+    margin-left:20px; 
+} 

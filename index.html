@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- FOR BETTER SEO -->
+
+    <meta name="description" content="It is a music player of latest music for better listening.">
+    <meta name="keywords" content="music-player, latest song">
+    <meta name="author" content="Kishan Dixit">
+
+    <!-- FOR FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/headphone.png">
+
+    <!--- EXTERNL STYLEHEET ---->
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="responsiveIndex.css">
+    <!-- FOR ICONS -->
+    <script src="https://kit.fontawesome.com/405334e038.js" crossorigin="anonymous"></script>
+    <!-- FOR GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,300&family=Libre+Bodoni:ital@1&family=Padauk&family=Poppins:wght@300;400;500;600&family=Raleway:ital@1&family=Square+Peg&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Kishan Music Player</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div id="icon"></div>
+            <p id="app-name">Kishan Music</p>
+        </div>
+        <div class="header-right">
+            <div id="search">
+                <form>
+                    <i class="fa-solid fa-magnifying-glass"></i><input type="text" name="search" placeholder="Search">
+                    <i class="fa-solid fa-microphone"></i>
+                </form>
+            </div>
+            <div id="notification">
+                <i class="fa-sharp fa-solid fa-bell"></i>
+            </div>
+            <div id="profile"></div>
+        </div>
+    </header>
+    <div id="whole-structure">
+        <main>
+            <!---------TOP CARDS SECTION ---------------------------->
+            <div id="top-cards">
+                <div>
+                    <h4 class="section-heading">Favourites</h4>
+                </div>
+                <div id="top-card">
+                    <div class="top " id="top1">
+                        <img src="./assets/top-images/top1.jpg"> 
+                    </div>
+                    <div class="top " id="top2">
+                        <img src="./assets/top-images/top2.jpg">
+                    </div>
+                    <div class="top " id="top3">
+                        <img src="./assets/top-images/top3.jpg">
+                    </div>
+                </div>
+            </div>
+            <!----------------- LATEST RELEASE SECTION ------------------>
+            <div id="latest">
+                <div>
+                    <h4 class="section-heading">Latest Release</h4>
+                </div>
+                <div class="latest-div">
+                    <div class="latest-card">
+                        <div class="card-right">
+                            <label class="latest-imgs" for="play-pause-btn">
+                                <img src="assets/latest-img/latest-img2.jpg">
+                                <div class="play-pause">
+                                    <input type="checkbox" id="play-pause-btn" class="check">
+                                    <div class="play-icon">
+                                        <a href="#bottom-play-bar"><i class="fa-solid fa-play"></i></a>
+                                    </div>
+                                    <div class="pause-icon">
+                                        <i class="fa-solid fa-pause"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="caption ">
+                                <h5>Uptown Funk</h5>
+                                <p>March 20</p>
+                            </div>
+                        </div>
+                        <div class="btn"><a href="#pop-up">...</a></div>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="card-right">
+                            <label class="latest-imgs">
+                                <img src="assets/latest-img/latest-img2.jpg">
+                                <div class="play-pause">
+                                    <input type="checkbox" id="play-pause-btn" class="check">
+                                    <div class="play-icon">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="pause-icon">
+                                        <i class="fa-solid fa-pause"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="caption ">
+                                <h5>Uptown Funk</h5>
+                                <p>March 20</p>
+                            </div>
+                        </div>
+                        <div class="btn"><a href="#pop-up">...</a></div>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="card-right">
+                            <label class="latest-imgs">
+                                <img src="assets/latest-img/latest-img2.jpg">
+                                <div class="play-pause">
+                                    <input type="checkbox" id="play-pause-btn" class="check">
+                                    <div class="play-icon">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="pause-icon">
+                                        <i class="fa-solid fa-pause"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="caption ">
+                                <h5>Uptown Funk</h5>
+                                <p>March 20</p>
+                            </div>
+                        </div>
+                        <div class="btn"><a href="#pop-up">...</a></div>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="card-right">
+                            <label class="latest-imgs">
+                                <img src="assets/latest-img/latest-img2.jpg">
+                                <div class="play-pause">
+                                    <input type="checkbox" id="play-pause-btn" class="check">
+                                    <div class="play-icon">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="pause-icon">
+                                        <i class="fa-solid fa-pause"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="caption ">
+                                <h5>Uptown Funk</h5>
+                                <p>March 20</p>
+                            </div>
+                        </div>
+                        <div class="btn"><a href="#pop-up">...</a></div>
+                    </div>
+                </div>
+<!------------------------        PLAY BAR          --------------------->
+                <div class="play-bar" id="bottom-play-bar" >
+                    <div class="music-info">
+                        <div class="music-img"></div>
+                        <div class="music-name">
+                            <h4>Music Name</h4>
+                            <p>Singer Name</p>
+                        </div>
+                        <div class="music-icons">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-ban"></i>
+                        </div>
+                    </div>
+                    <!-- <div class="music-controls">
+                        <div>
+                            <i class="fa-solid fa-shuffle"></i>
+                            <i class="fa-solid fa-backward-step"></i>
+                            <i class="fa-regular fa-circle-pause"></i>
+                            <i class="fa-solid fa-forward-step"></i>
+                            <i class="fa-sharp fa-solid fa-repeat"></i>
+                        </div>
+                        <div>
+                            <span>00:30</span><input type="range" step="1" max="100"><span>05:30</span>
+                        </div>
+                    </div> -->
+                    <div class="music-controls" >
+                        <audio controls id="music-tag">
+                            <source src="assets/audio/WhatsApp Audio 2023-04-01 at 13.00.41.mpeg" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="another-controls">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                        <input type="range" step="1">
+                    </div>
+                </div>
+            </div>
+            <!----------------------- POP UP CARD ------------------------->
+            <div id="pop-up" class="popup-card">
+                <p><span><i class="fa-solid fa-play"></i></span>Play Now</p>
+                <p><span><i class="fa-solid fa-plus"></i></span>Add TO Queue</p>
+                <p><span><i class="fa-solid fa-download"></i></span>Download</p>
+                <p><span><i class="fa-solid fa-circle-info"></i></span>Get Info</p>
+                <a href="#pop-in"><span><i class="fa-solid fa-xmark"></i></span></a>
+            </div>
+
+            <!----------------- PUPULAR ARTIST SECTION----------------->
+            <div class="popular-artist">
+                <div>
+                    <h4 class="section-heading">Monthly Top Artist</h4>
+                </div>
+                <div id="artist">
+                    <div class="artist-containar">
+                        <div class="artist-profile" id="artist1"></div>
+                        <div class="play-new-screen">
+                            <a href="newMusicScreen.html"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                        <p class="caption">Monali Thakur</p>
+                    </div>
+                    <div  class="artist-containar">
+                        <div class="artist-profile" id="artist2"></div>
+                        <div class="play-new-screen">
+                            <a href="newMusicScreen.html"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                        <p class="caption">Shreya Ghoshal</p>
+                    </div>
+                    <div  class="artist-containar">
+                        <div class="artist-profile" id="artist3"></div>
+                        <div class="play-new-screen">
+                            <a href="newMusicScreen.html"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                        <p class="caption">Arijit Singh</p>
+                    </div>
+                    <div  class="artist-containar">
+                        <div class="artist-profile" id="artist4"></div>
+                        <div class="play-new-screen">
+                            <a href="newMusicScreen.html"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                        <p class="caption">Neha Kakkar</p>
+                    </div>
+                    <div  class="artist-containar">
+                        <div class="artist-profile" id="artist5"></div>
+                        <div class="play-new-screen">
+                            <a href="newMusicScreen.html"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                        <p class="caption">Arijit Singh</p>
+                    </div>
+                    <div  class="artist-containar">
+                        <div class="artist-profile" id="artist6"></div>
+                        <div class="play-new-screen">
+                            <a href="newMusicScreen.html"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                        <p class="caption">Mohit Chauhan</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------- POPULAR CATEGORY 1--------------->
+            <div class="popular-category1">
+                <div>
+                    <h4 class="section-heading">Category</h4>
+                </div>
+                <div class="category1">
+                    <div class="catg-round">
+                        <div class="artist-profile" id="catg1"></div>
+                        <div class="catg-round-name pointer">
+                            <p >Electronic</p>
+                        </div>
+                    </div>
+                    <div class="catg-round">
+                        <div class="artist-profile" id="catg2"></div>
+                        <div class="catg-round-name pointer">
+                            <p >Party</p>
+                        </div>
+                    </div>
+                    <div class="catg-round">
+                        <div class="artist-profile" id="catg3"></div>
+                        <div class="catg-round-name pointer">
+                            <p >Radio</p>
+                        </div>
+                    </div>
+                    <div class="catg-round">
+                        <div class="artist-profile" id="catg4"></div>
+                        <div class="catg-round-name pointer">
+                            <p >Rock</p>
+                        </div>
+                    </div>
+                    <div class="catg-round">
+                        <div class="artist-profile" id="catg5"></div>
+                        <div class="catg-round-name pointer">
+                            <p >Workout</p>
+                        </div>
+                    </div>
+                    <div class="catg-round">
+                        <div class="artist-profile" id="catg6"></div>
+                        <div class="catg-round-name pointer">
+                            <p >Electronic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------- POPULAR CATEGORY 2--------------->
+            <div class="category2">
+                <div>
+                    <h4 class="section-heading">Category</h4>
+                </div>
+                <div class="cards">
+                    <div class="card "> 
+                        <div class="card-content pointer" id="card1"></div>
+                        <div class="card-name">Chill</div>
+                    </div>
+                    <div class="card "> 
+                        <div class="card-content pointer" id="card2"></div>
+                        <div class="card-name">Love</div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-content pointer" id="card3"></div>
+                        <div class="card-name">Pop</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------- POPULAR CATEGORY 3--------------->
+            <div class="category3">
+                <div>
+                    <h4 class="section-heading">Category</h4>
+                </div>
+                <div class="cards">
+                    <div class="card ">
+                        <div class="card-content flip pointer" id="card4"></div>
+                        <div class="card-name">Chill</div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-content flip pointer" id="card5"></div>
+                        <div class="card-name">Love</div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-content flip pointer" id="card6"></div>
+                        <div class="card-name">Pop</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------- LATEST HINDI SECTION--------------->
+            <div class="latest-hindi">
+                <div>
+                    <h4 class="section-heading">Latest Hindi</h4>
+                </div>
+                <div class="hindi-cards">
+                    <div class="hindi-card">
+                        <div class="hindi-card-img pointer" id="hindi-card-img1"></div>
+                        <div class="hindi-card-info">
+                            <h4>Song Name</h4>
+                            <p>March 23,2023</p>
+                        </div>
+                    </div>
+                    <div class="hindi-card">
+                        <div class="hindi-card-img pointer" id="hindi-card-img2"></div>
+                        <div class="hindi-card-info">
+                            <h4>Song Name</h4>
+                            <p>March 23,2023</p>
+                        </div>
+                    </div>
+                    <div class="hindi-card">
+                        <div class="hindi-card-img pointer" id="hindi-card-img3"></div>
+                        <div class="hindi-card-info">
+                            <h4>Song Name</h4>
+                            <p>March 23,2023</p>
+                        </div>
+                    </div>
+                    <div class="hindi-card">
+                        <div class="hindi-card-img pointer" id="hindi-card-img4"></div>
+                        <div class="hindi-card-info">
+                            <h4>Song Name</h4>
+                            <p>March 23,2023</p>
+                        </div>
+                    </div>
+                    <div class="hindi-card">
+                        <div class="hindi-card-img pointer" id="hindi-card-img5"></div>
+                        <div class="hindi-card-info">
+                            <h4>Song Name</h4>
+                            <p>March 23,2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------- LATEST ENGLISH SECTION--------------->
+            <div class="latest-english">
+                <div>
+                    <h4 class="section-heading">Latest English</h4>
+                </div>
+                <div class="hindi-cards">
+                    <div class="hindi-card">
+                        <div class="hindi-card-img pointer" id="english-card-img1"></div>
+                        <div class="hindi-card-info">
+                            <h4>Song Name</h4>
+                            <p>March 23,2023</p>
+                        </div>
+                    </div>
+                    <div class="hindi-card">
+                        <div class="hindi-card-img pointer" id="english-card-img2"></div>
+                        <div class="hindi-card-info">
+                            <h4>Song Name</h4>
+                            <p>March 23,2023</p>
+                        </div>
+                    </div>
+                    <div class="hindi-card">
+                        <div class="hindi-card-img pointer " id="english-card-img3"></div>
+                        <div class="hindi-card-info">
+                            <h4>Song Name</h4>
+                            <p>March 23,2023</p>
+                        </div>
+                    </div>
+                    <div class="hindi-card">
+                        <div class="hindi-card-img pointer" id="english-card-img4"></div>
+                        <div class="hindi-card-info">
+                            <h4>Song Name</h4>
+                            <p>March 23,2023</p>
+                        </div>
+                    </div>
+                    <div class="hindi-card">
+                        <div class="hindi-card-img pointer" id="english-card-img5"></div>
+                        <div class="hindi-card-info">
+                            <h4>Song Name</h4>
+                            <p>March 23,2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--------------------- ASIDE  SECTION--------------->
+        <aside>
+            <div>
+                <h4 class="section-heading">Queue</h4>
+            </div>
+            <div id="queue">
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">01</div>
+                        <div class="que-img" id="que-img1"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer" >
+                    <div class="queue-temp-left">
+                        <div class="que-no">02</div>
+                        <div class="que-img" id="que-img2"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">03</div>
+                        <div class="que-img" id="que-img3"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">04</div>
+                        <div class="que-img" id="que-img4"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">05</div>
+                        <div class="que-img" id="que-img5"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">06</div>
+                        <div class="que-img" id="que-img1"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer" >
+                    <div class="queue-temp-left">
+                        <div class="que-no">07</div>
+                        <div class="que-img" id="que-img2"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">08</div>
+                        <div class="que-img" id="que-img3"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">09</div>
+                        <div class="que-img" id="que-img4"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">10</div>
+                        <div class="que-img" id="que-img5"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">11</div>
+                        <div class="que-img" id="que-img1"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer" >
+                    <div class="queue-temp-left">
+                        <div class="que-no">12</div>
+                        <div class="que-img" id="que-img2"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">13</div>
+                        <div class="que-img" id="que-img3"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">14</div>
+                        <div class="que-img" id="que-img4"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">15</div>
+                        <div class="que-img" id="que-img5"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">11</div>
+                        <div class="que-img" id="que-img1"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">17</div>
+                        <div class="que-img" id="que-img2"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">18</div>
+                        <div class="que-img" id="que-img3"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">19</div>
+                        <div class="que-img" id="que-img4"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">20</div>
+                        <div class="que-img" id="que-img5"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">21</div>
+                        <div class="que-img" id="que-img1"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer" >
+                    <div class="queue-temp-left">
+                        <div class="que-no">22</div>
+                        <div class="que-img" id="que-img2"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">23</div>
+                        <div class="que-img" id="que-img3"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">24</div>
+                        <div class="que-img" id="que-img4"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">25</div>
+                        <div class="que-img" id="que-img5"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">26</div>
+                        <div class="que-img" id="que-img1"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer" >
+                    <div class="queue-temp-left">
+                        <div class="que-no">27</div>
+                        <div class="que-img" id="que-img2"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">28</div>
+                        <div class="que-img" id="que-img3"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">29</div>
+                        <div class="que-img" id="que-img4"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">30</div>
+                        <div class="que-img" id="que-img5"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">31</div>
+                        <div class="que-img" id="que-img1"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer" >
+                    <div class="queue-temp-left">
+                        <div class="que-no">32</div>
+                        <div class="que-img" id="que-img2"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">33</div>
+                        <div class="que-img" id="que-img3"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">34</div>
+                        <div class="que-img" id="que-img4"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">35</div>
+                        <div class="que-img" id="que-img5"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">36</div>
+                        <div class="que-img" id="que-img1"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer" >
+                    <div class="queue-temp-left">
+                        <div class="que-no">37</div>
+                        <div class="que-img" id="que-img2"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">38</div>
+                        <div class="que-img" id="que-img3"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">39</div>
+                        <div class="que-img" id="que-img4"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="queue-template flexible pointer">
+                    <div class="queue-temp-left">
+                        <div class="que-no">40</div>
+                        <div class="que-img" id="que-img5"></div>
+                        <div class="que-img-info">
+                            <h4>Latest Song</h4>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                    <div class="que-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>
